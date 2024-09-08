@@ -10,20 +10,15 @@ description "POLJUGULAR"
 
 version "1.0.3"
 
-client_script "Client/*.lua"
+client_script "client/*.lua"
 
 files {
-    "Data/*.meta"
+    "data/*.meta"
 }
  
-data_file "HANDLING_FILE" "Data/handling.meta"
-data_file "VEHICLE_METADATA_FILE" "Data/vehicles.meta"
-data_file "CARCOLS_FILE" "Data/carcols.meta"
-data_file "VEHICLE_VARIATION_FILE" "Data/carvariations.meta"
+data_file "HANDLING_FILE" "data/handling.meta"
+data_file "VEHICLE_METADATA_FILE" "data/vehicles.meta"
+data_file "CARCOLS_FILE" "data/carcols.meta"
+data_file "VEHICLE_VARIATION_FILE" "data/carvariations.meta"
 
 dependencies {"/server:7290", "/gameBuild:3258"}
-
-escrow_ignore {
-    "Client/*.lua",
-    "Stream/liveries/*.yft"
-}
